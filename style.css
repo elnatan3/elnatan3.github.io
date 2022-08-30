@@ -317,12 +317,7 @@ footer{
         padding-right: 50px;
     }
     
-    .grid-4-by-1 img{
-        display: grid;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
+    
 
     .title{
         font-size: 27px;
@@ -438,6 +433,12 @@ footer{
     .header-text{
         font-size: 18px;
     }
+    
+    .grid-4-by-1 img{
+        grid-row: 2;
+        width: 80%;
+        height: 80%;
+    }
 
     .grid-4-by-1 p{
         font-size: 12px;
@@ -446,4 +447,6 @@ footer{
     .title{
         font-size: 15px;
     }
+    
+    
 }
