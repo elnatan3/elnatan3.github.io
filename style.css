@@ -156,7 +156,9 @@
 }
 
 .grid-4-by-1 img{
-    width: 20%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .grid-4-by-1 p{
