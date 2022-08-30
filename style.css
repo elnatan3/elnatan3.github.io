@@ -433,12 +433,6 @@ footer{
     .header-text{
         font-size: 18px;
     }
-    
-    .grid-4-by-1 img{
-        grid-row: 2;
-        width: 80%;
-        height: 80%;
-    }
 
     .grid-4-by-1 p{
         font-size: 12px;
