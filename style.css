@@ -318,17 +318,99 @@ span:nth-child(13){
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.info{
-    display: grid;
-    row-gap: 3em;
-    margin-top: 60px;
+.contact, .contact p{
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 30px;
 }
 
-.info h2{
-    font-size: 20px;
-    font-family: cursive;
-    text-align: center;
+.contact p{
+    font-family: 'Rubik Dirt', cursive;
+    margin-bottom: 20px;
 }
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left{
+    padding-top: 40px;
+}
+
+.left h3{
+    color: darkblue;
+    font-weight:bold;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+
+.right{
+    padding: 40px;
+    background: lightblue;
+    color: black;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+tr td:nth-child(2){
+    text-align: left;
+}
+
+tr td{
+    padding-top: 20px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.row .group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    padding-bottom: 5px;
+} 
+
+textarea{
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    padding: 10px;  
+    box-sizing: border-box;   
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color:darkblue;
+    font-weight: bold;
+}
+
+button{
+    background-color:darkblue;
+    width: 100px;
+    border:none;
+    outline: none;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
 
 .link:hover{
     background-color: orange;
@@ -407,6 +489,26 @@ footer{
     .info h2{
         font-size: 15px;
     }
+
+    .box{
+        grid-template-columns: 1fr;
+    }
+
+    .right{
+        margin-top: 25px;
+    }
+
+    tr td:first-child{
+        font-size: 10px;
+    }
+    
+    tr td:nth-child(2){
+        font-size: 10px;
+    }
+
+    .group{
+        margin-top: 10px;
+    }
 }
 
 @media only screen and (max-width: 650px){
@@ -481,6 +583,11 @@ footer{
         font-size: 10px;
         
     }
+
+    .contact p{
+        font-size: 10px;
+    }
+
 }
 
 @media only screen and (max-width: 450px){
@@ -499,6 +606,32 @@ footer{
 
     .title{
         font-size: 15px;
+    }
+
+    tr td:first-child{
+        font-size: 8px;
+    }
+    
+    tr td:nth-child(2){
+        font-size: 8px;
+    }
+
+    label{
+        font-size: 10px;
+    }
+
+    input::placeholder{
+        font-size: 10px;
+    }
+
+    textarea{
+        font-size: 10px;
+    }
+
+    button{
+        font-size: 8px;
+        width: 40px;
+        border-radius: 20px;
     }
     
     
