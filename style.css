@@ -291,12 +291,72 @@ span:nth-child(13){
     font-family: cursive;
 }
 
+.project-container{
+    width: 70vw;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.project-container > h2{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.project-container > p{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 0;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.programmingLangaugeHead{
+    margin: 30px 0;
+}
+
+.programmingLangaugeHead ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.programmingLanguage{
+    flex: 0 0 calc(17% - 10px);
+    display: flex;
+    justify-content:center;
+    background: lightblue;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    padding: 12px;
+    color: blue;
+    font-weight: bold;
+    margin-left: 50px;
+
+}
+
+.programmingLanguage:hover{
+    opacity: 0.7;
+}
+
+.programmingLanguage li{
+    padding: 0 10px;
+}
+
+.programmingLanguage span{
+    color: #222;
+}
+
+
 .project{
     display: grid;
     justify-items: center;
     row-gap: 3em;
 }
-
 
 .project h2{
     font-size: 40px;
