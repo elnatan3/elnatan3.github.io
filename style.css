@@ -335,7 +335,7 @@ span:nth-child(13){
     padding: 12px;
     color: blue;
     font-weight: bold;
-    margin-left: 50px;
+    margin: 20px;
 
 }
 
@@ -644,6 +644,11 @@ footer{
     }
 
     .contact p{
+        font-size: 10px;
+    }
+
+    .programmingLanguage{
+        padding: 2px;
         font-size: 10px;
     }
 
