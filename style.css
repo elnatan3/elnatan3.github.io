@@ -206,6 +206,7 @@ span:nth-child(13){
 }
 
 .image-container {
+    margin-top: 50px;
     flex-basis: 40%;
     margin-right: 30px;
 }
