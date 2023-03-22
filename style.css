@@ -673,6 +673,10 @@ footer{
     .education {
         flex-direction: column;
     }
+    .grid-item img {
+        height: 50px;
+    
+    }
     .location{
         font-size: 7px;
     }
