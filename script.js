@@ -22,3 +22,11 @@ function changeActivePosition(activeItem){
     }
     activeItem.classList.add('active');
 };
+
+function zoomIn(event) {
+    event.target.style.transform = "scale(1.5)";
+  }
+  
+function zoomOut(event) {
+    event.target.style.transform = "scale(1)";
+  }
