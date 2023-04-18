@@ -864,8 +864,8 @@ footer{
     }
 
     #image-track > .image{
-        width: 47vmin;
-        height: 47vmin;
+        width: 90vmin;
+        height: 65vmin;
     }
     
 }
@@ -915,13 +915,10 @@ footer{
     }
     
     .cv{
-        height: 25vh;
+        height: 40px;
     }
 
-    #image-track > .image{
-        width: 27vmin;
-        height: 27vmin;
-    }
+    
 }
 
 @media only screen and (max-width: 650px){
@@ -990,13 +987,16 @@ footer{
         font-size: 15px;
     }
 
+    .project{
+        row-gap: 1.5em;
+    }
     .project h2{
         font-size: 18px;
     }
 
     .project p{
-        font-size: 11px;
-        line-height: 2;
+        font-size: 9px;
+        line-height: 1.5;
     }
 
     .info h2{
@@ -1008,9 +1008,11 @@ footer{
         font-size: 10px;
     }
 
+
+
     .programmingLanguage{
-        padding: 2px;
-        font-size: 10px;
+        padding: 1px;
+        font-size: 15px;
     }
 
     .download-cv{
@@ -1035,7 +1037,7 @@ footer{
     }
 
     .grid-4-by-1 p{
-        font-size: 12px;
+        font-size: 9px;
     }
 
     .title{
@@ -1066,6 +1068,15 @@ footer{
         font-size: 8px;
         width: 40px;
         border-radius: 20px;
+    }
+    .cv{
+        height: 32px;
+        font-size: 10px;
+
+    }
+    .download-cv{
+        height: 75px;
+        margin-top: 10px;
     }
     
     
