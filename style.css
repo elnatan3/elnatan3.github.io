@@ -419,6 +419,7 @@ span:nth-child(13){
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .skill {
     position: relative;
     animation: move-skill 3s infinite alternate ease-in-out;
@@ -456,6 +457,7 @@ span:nth-child(13){
     border-top: 2px solid #555;
     width: 30px;
 }
+
 .cert{
     position: relative;
     margin-top: 80px;
@@ -704,6 +706,7 @@ tr td:nth-child(2){
 tr td{
     padding-top: 20px;
 }
+
 .row{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -990,6 +993,7 @@ footer{
     .project{
         row-gap: 1.5em;
     }
+
     .project h2{
         font-size: 18px;
     }
@@ -1008,8 +1012,6 @@ footer{
         font-size: 10px;
     }
 
-
-
     .programmingLanguage{
         padding: 1px;
         font-size: 15px;
@@ -1024,6 +1026,13 @@ footer{
         font-size: 10px;
     }
 
+    .cert{
+        height: 200px;
+    }
+    #image-track .image{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media only screen and (max-width: 450px){
@@ -1069,6 +1078,7 @@ footer{
         width: 40px;
         border-radius: 20px;
     }
+
     .cv{
         height: 32px;
         font-size: 10px;
