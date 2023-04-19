@@ -546,11 +546,22 @@ span:nth-child(13){
     right: 0;
 }
   
-  
+.social-media img {
+    width: 60px;
+    height: 60px;
+    margin-left: 170px;
+  }
+
+.social-media img:hover{
+    background-color: lightblue;
+    border-radius: 30%;
+}
+
 .social-media p{
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 30px;
     margin-bottom: 10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     text-align: center;
     font-style: italic;
@@ -967,6 +978,11 @@ footer{
     .cv{
         height: 40px;
     }
+    .social-media img {
+        width: 40px;
+        height: 40px;
+        margin-left: 70px;
+      }
 
     
 }
@@ -1024,7 +1040,7 @@ footer{
     .title{
         font-size: 20px;
     }
-
+    
     .social-media p{
         font-size: 20px;
     }
@@ -1143,7 +1159,11 @@ footer{
         height: 75px;
         margin-top: 10px;
     }
-    
+    .social-media img {
+        width: 30px;
+        height: 30px;
+        margin-left: 50px;
+      }
     
     
 }
