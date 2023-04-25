@@ -1076,7 +1076,8 @@ footer{
     }
 
     .header-text{
-        font-size: 25px;
+        font-size: 15px;
+        margin-left: 70px;
     }
     .education {
         flex-direction: column;
