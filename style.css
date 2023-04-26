@@ -1150,6 +1150,10 @@ footer{
         
     }
 
+    .text{
+        font-size: 13px;
+    }
+
     .contact p{
         font-size: 10px;
     }
