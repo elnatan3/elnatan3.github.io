@@ -26,6 +26,8 @@
 
 .navbar {
     font-weight: 600;
+    position: fixed;
+    top: 0;
     background-color: white;
     width: 100%;
     z-index: 1;
@@ -36,6 +38,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 35px;
+}
+
+main{
+    padding-top: 200px;
 }
 
 
@@ -1160,6 +1166,7 @@ footer{
 
     .programmingLanguage{
         padding: 1px;
+        margin: 10px;
         font-size: 15px;
     }
 
@@ -1228,6 +1235,10 @@ footer{
     
     tr td:nth-child(2){
         font-size: 8px;
+    }
+
+    .nav-logo img{
+        width: 130px;
     }
 
     label{
