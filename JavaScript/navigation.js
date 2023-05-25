@@ -15,3 +15,5 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
+window.onscroll = function() {scrollFunction()};
+

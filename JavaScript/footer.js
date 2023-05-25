@@ -1,5 +1,19 @@
 const footerCode = `
 <footer>
+    <nav class="navbar-footer">
+    <div class="navbar-content-footer justify">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="extracurricular.html">Extracurriculars</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
     <div class="footer-grid justify">
         <div class="location">
             Address: 639 38th Street, Rock Island, Illinois<br>
