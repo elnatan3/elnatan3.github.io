@@ -887,6 +887,127 @@ span:nth-child(13) {
     row-gap: 3em;
 }
 
+.muspedia-img-desktop {
+    display: none;
+}
+
+.muspedia-img-mobile {
+    display: block;
+}
+
+.ThreeDBoard-img-desktop{
+    display: none;
+}
+
+.ThreeDBoard-img-mobile{
+    display: block;
+}
+
+.pointillist-img-desktop{
+    display: none;
+}
+
+.pointillist-img-mobile{
+    display: block;
+}
+
+.recipe-img-desktop{
+    display: none;
+}
+
+.recipe-img-mobile{
+    display: block;
+}
+
+.memory-img-desktop{
+    display: none;
+}
+
+.memory-img-mobile{
+    display: block;
+}
+
+.pythonMap-img-desktop{
+    display: none;
+}
+
+.pythonMap-img-mobile{
+    display: block;
+}
+
+.amharic-img-desktop{
+    display: none;
+}
+
+.amharic-img-mobile{
+    display: block;
+}
+
+.proverb-img-desktop{
+    display: none;
+}
+
+.proverb-img-mobile{
+    display: block;
+}
+
+.student-img-desktop{
+    display: none;
+}
+
+.student-img-mobile{
+    display: block;
+}
+
+.quote-img-desktop{
+    display: none;
+}
+
+.quote-img-mobile{
+    display: block;
+}
+
+.todo-img-desktop{
+    display: none;
+}
+
+.todo-img-mobile{
+    display: block;
+}
+
+.r1-img-desktop{
+    display: none;
+}
+
+.r1-img-mobile{
+    display: block;
+}
+
+.r2-img-desktop{
+    display: none;
+}
+
+.r2-img-mobile{
+    display: block;
+}
+
+.r3-img-desktop{
+    display: none;
+}
+
+.r3-img-mobile{
+    display: block;
+}
+
+.r4-img-desktop{
+    display: none;
+}
+
+.r4-img-mobile{
+    display: block;
+}
+
+
 .project img {
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
@@ -908,7 +1029,6 @@ span:nth-child(13) {
     transform: translateZ(-50px); /* Move the TV screen behind the image */
     z-index: -1; /* Position the TV screen behind the image */
 }
-
 
 
 .img-wrapper {
@@ -1209,6 +1329,127 @@ footer {
 }
 
 
+@media only screen and (min-width: 768px) { 
+    .muspedia-img-desktop {
+        display: block;
+    }
+
+    .muspedia-img-mobile {
+        display: none;
+    }
+
+    .ThreeDBoard-img-desktop{
+        display: block;
+    }
+    
+    .ThreeDBoard-img-mobile{
+        display: none;
+    }
+
+    .pointillist-img-desktop{
+        display: block;
+    }
+    
+    .pointillist-img-mobile{
+        display: none
+    }
+
+    .recipe-img-desktop{
+        display: block;
+    }
+    
+    .recipe-img-mobile{
+        display: none;
+    }
+
+    .memory-img-desktop{
+        display: block;
+    }
+
+    .memory-img-mobile{
+        display: none;
+    }
+
+    .pythonMap-img-desktop{
+        display: block;
+    }
+    
+    .pythonMap-img-mobile{
+        display: none;
+    }
+
+    .amharic-img-desktop{
+        display: block;
+    }
+    
+    .amharic-img-mobile{
+        display: none;
+    }
+
+    .proverb-img-desktop{
+        display: block;
+    }
+    
+    .proverb-img-mobile{
+        display: none;
+    }
+
+    .student-img-desktop{
+        display: block;
+    }
+    
+    .student-img-mobile{
+        display: none;
+    }
+
+    .quote-img-desktop{
+        display: block;
+    }
+    
+    .quote-img-mobile{
+        display: none;
+    }
+
+    .todo-img-desktop{
+        display: block;
+    }
+    
+    .todo-img-mobile{
+        display: none;
+    }
+
+    .r1-img-desktop{
+        display: block;
+    }
+    
+    .r1-img-mobile{
+        display: none;
+    }
+
+    .r2-img-desktop{
+        display: block;
+    }
+    
+    .r2-img-mobile{
+        display: none;
+    }
+
+    .r3-img-desktop{
+        display: block;
+    }
+    
+    .r3-img-mobile{
+        display: none;
+    }
+
+    .r4-img-desktop{
+        display: block;
+    }
+    
+    .r4-img-mobile{
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 1090px) {
     .navbar-content ul {
@@ -1419,6 +1660,7 @@ footer {
     .project img {
         width: 100%;
         height: 100%;
+        border-radius: 0;
     }
 
     .img-pulse img {
