@@ -120,24 +120,55 @@ body {
     align-items: center;
     column-gap: 1em;
     text-transform: uppercase;
-}
-
-.navbar-content li a {
+  }
+  
+  .navbar-content li a {
     text-decoration: none;
     color: black;
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
-}
-
-.navbar-content li:hover {
+    position: relative;
+  }
+  
+  .navbar-content li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: lightblue;
+    border-radius: 50%;
+    opacity: 0;
+    animation: orbit 2s linear infinite;
+  }
+  
+  .navbar-content li:hover a::before {
+    opacity: 1;
+  }
+  
+  @keyframes orbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(30px) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg) translateX(30px) rotate(-180deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(30px) rotate(-360deg);
+    }
+  }
+  
+  .navbar-content li:hover {
     background-color: lightblue;
     transform: scaleY(1.5);
-}
-
-.navbar-content li {
+  }
+  
+  .navbar-content li {
     text-align: center;
-}
-
+  }
+  
 
 .grid-2-by-1 {
     display: grid;
@@ -808,6 +839,7 @@ span:nth-child(13) {
     text-align: center;
 }
 
+
 .programmingLangaugeHead {
     margin: 30px 0;
 }
@@ -854,6 +886,29 @@ span:nth-child(13) {
     position: relative;
     row-gap: 3em;
 }
+
+.project img {
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
+    transform: translateZ(0) rotateX(10deg); /* Apply a slight rotation */
+    perspective: 1000px; /* Set the perspective for 3D effect */
+    position: relative;
+    z-index: 1; /* Ensure the image is above the TV screen */
+}
+
+.project::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #555;
+    opacity: 0.3; /* Adjust the opacity to control the TV screen effect */
+    transform: translateZ(-50px); /* Move the TV screen behind the image */
+    z-index: -1; /* Position the TV screen behind the image */
+}
+
 
 
 .img-wrapper {
