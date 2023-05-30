@@ -60,6 +60,18 @@ function showSlides(n) {
     }
   }
 
+  function toggleDescription(descriptionId) {
+    var description = document.getElementById(descriptionId);
+    var button = document.getElementById(descriptionId + "-button");
+    if (description.style.display === "none") {
+        description.style.display = "inline";
+        button.innerHTML = "Hide Description";
+    } else {
+        description.style.display = "none";
+        button.innerHTML = "Read Description";
+    }
+}
+
 
   
   

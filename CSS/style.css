@@ -26,6 +26,9 @@
     padding-right: 10%;
 }
 
+h2 {
+    margin-top: 15px;
+}
 
 .navbar {
     font-weight: 600;
@@ -120,17 +123,17 @@ body {
     align-items: center;
     column-gap: 1em;
     text-transform: uppercase;
-  }
-  
-  .navbar-content li a {
+}
+
+.navbar-content li a {
     text-decoration: none;
     color: black;
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
     position: relative;
-  }
-  
-  .navbar-content li a::before {
+}
+
+.navbar-content li a::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -142,33 +145,35 @@ body {
     border-radius: 50%;
     opacity: 0;
     animation: orbit 2s linear infinite;
-  }
-  
-  .navbar-content li:hover a::before {
+}
+
+.navbar-content li:hover a::before {
     opacity: 1;
-  }
-  
-  @keyframes orbit {
+}
+
+@keyframes orbit {
     0% {
-      transform: translate(-50%, -50%) rotate(0deg) translateX(30px) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg) translateX(30px) rotate(0deg);
     }
+
     50% {
-      transform: translate(-50%, -50%) rotate(180deg) translateX(30px) rotate(-180deg);
+        transform: translate(-50%, -50%) rotate(180deg) translateX(30px) rotate(-180deg);
     }
+
     100% {
-      transform: translate(-50%, -50%) rotate(360deg) translateX(30px) rotate(-360deg);
+        transform: translate(-50%, -50%) rotate(360deg) translateX(30px) rotate(-360deg);
     }
-  }
-  
-  .navbar-content li:hover {
+}
+
+.navbar-content li:hover {
     background-color: lightblue;
     transform: scaleY(1.5);
-  }
-  
-  .navbar-content li {
+}
+
+.navbar-content li {
     text-align: center;
-  }
-  
+}
+
 
 .grid-2-by-1 {
     display: grid;
@@ -443,88 +448,92 @@ span:nth-child(13) {
     align-items: center;
     margin-bottom: 50px;
     transition: transform 0.3s ease;
-  }
-  
-  /* Apply hover effect */
-  .education:hover {
+}
+
+/* Apply hover effect */
+.education:hover {
     transform: scale(1.05);
-  }
-  
-  .image-container {
+}
+
+.image-container {
     margin-top: 50px;
     flex-basis: 40%;
     margin-right: 30px;
     border-radius: 10px;
-    overflow: hidden; /* Clip overflowing animation effects */
-  }
-  
-  /* Add a pulsating effect to the image */
-  .image-container img {
+    overflow: hidden;
+    /* Clip overflowing animation effects */
+}
+
+/* Add a pulsating effect to the image */
+.image-container img {
     width: 100%;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     animation: pulse 2s infinite;
-  }
-  
-  /* Define the pulsating animation */
-  @keyframes pulse {
+}
+
+/* Define the pulsating animation */
+@keyframes pulse {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
-  .info-container {
+}
+
+.info-container {
     flex-basis: 55%;
-  }
-  
-  .education h2 {
+}
+
+.education h2 {
     margin-bottom: 15px;
     font-size: 27px;
     font-weight: bold;
     color: #333;
     transition: color 0.3s ease;
-  }
-  
-  /* Add color transition on hover */
-  .education:hover h2 {
+}
+
+/* Add color transition on hover */
+.education:hover h2 {
     color: blue;
-  }
-  
-  .education p {
+}
+
+.education p {
     font-size: 19px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
     color: black;
-  }
-  
-  /* Add fade-in effect to the education blocks */
-  @keyframes fade-in {
+}
+
+/* Add fade-in effect to the education blocks */
+@keyframes fade-in {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  /* Apply fade-in animation to each education block */
-  .education:nth-child(odd) {
+}
+
+/* Apply fade-in animation to each education block */
+.education:nth-child(odd) {
     animation: fade-in 0.8s ease forwards;
-  }
-  
-  .education:nth-child(even) {
+}
+
+.education:nth-child(even) {
     animation: fade-in 0.8s ease 0.2s forwards;
-  }
-  
-  
+}
+
+
 
 .grid-1-by-6 {
     display: grid;
@@ -536,23 +545,26 @@ span:nth-child(13) {
 
 }
 
-.rotate{
+.rotate {
     border-radius: 3rem;
     display: grid;
     place-items: center;
 }
 
-.rotate-img{
+.rotate-img {
     transform: rotate(7deg);
     transition: all 450ms ease;
 }
 
 .rotate-img:hover {
-    transform: rotate(0deg); /* Tilting the image back */
+    transform: rotate(0deg);
+    /* Tilting the image back */
 }
-.rotate-img img{
+
+.rotate-img img {
     border-radius: 3rem;
 }
+
 .grid-1-by-3 {
     display: grid;
     grid-template-columns: 1fr;
@@ -884,7 +896,79 @@ span:nth-child(13) {
     display: grid;
     justify-items: center;
     position: relative;
-    row-gap: 3em;
+    row-gap: 2em;
+    background-color: #BFEFFF;
+}
+
+
+.read-button {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.read-button:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.read-button:after {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    animation: explosion 1.5s infinite;
+    transform-origin: center;
+    pointer-events: none;
+}
+
+@keyframes explosion {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    10% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+#musipedia,
+#threeD,
+#pointillist,
+#recipe,
+#amharic,
+#proverb,
+#student,
+#memory,
+#pyth-research,
+#quote,
+#todo {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-in-out;
 }
 
 .muspedia-img-desktop {
@@ -895,123 +979,119 @@ span:nth-child(13) {
     display: block;
 }
 
-.ThreeDBoard-img-desktop{
+.ThreeDBoard-img-desktop {
     display: none;
 }
 
-.ThreeDBoard-img-mobile{
+.ThreeDBoard-img-mobile {
     display: block;
 }
 
-.pointillist-img-desktop{
+.pointillist-img-desktop {
     display: none;
 }
 
-.pointillist-img-mobile{
+.pointillist-img-mobile {
     display: block;
 }
 
-.recipe-img-desktop{
+.recipe-img-desktop {
     display: none;
 }
 
-.recipe-img-mobile{
+.recipe-img-mobile {
     display: block;
 }
 
-.memory-img-desktop{
+.memory-img-desktop {
     display: none;
 }
 
-.memory-img-mobile{
+.memory-img-mobile {
     display: block;
 }
 
-.pythonMap-img-desktop{
+.pythonMap-img-desktop {
     display: none;
 }
 
-.pythonMap-img-mobile{
+.pythonMap-img-mobile {
     display: block;
 }
 
-.amharic-img-desktop{
+.amharic-img-desktop {
     display: none;
 }
 
-.amharic-img-mobile{
+.amharic-img-mobile {
     display: block;
 }
 
-.proverb-img-desktop{
+.proverb-img-desktop {
     display: none;
 }
 
-.proverb-img-mobile{
+.proverb-img-mobile {
     display: block;
 }
 
-.student-img-desktop{
+.student-img-desktop {
     display: none;
 }
 
-.student-img-mobile{
+.student-img-mobile {
     display: block;
 }
 
-.quote-img-desktop{
+.quote-img-desktop {
     display: none;
 }
 
-.quote-img-mobile{
+.quote-img-mobile {
     display: block;
 }
 
-.todo-img-desktop{
+.todo-img-desktop {
     display: none;
 }
 
-.todo-img-mobile{
+.todo-img-mobile {
     display: block;
 }
 
-.r1-img-desktop{
+.r1-img-desktop {
     display: none;
 }
 
-.r1-img-mobile{
+.r1-img-mobile {
     display: block;
 }
 
-.r2-img-desktop{
+.r2-img-desktop {
     display: none;
 }
 
-.r2-img-mobile{
+.r2-img-mobile {
     display: block;
 }
 
-.r3-img-desktop{
+.r3-img-desktop {
     display: none;
 }
 
-.r3-img-mobile{
+.r3-img-mobile {
     display: block;
 }
 
-.r4-img-desktop{
+.r4-img-desktop {
     display: none;
 }
 
-.r4-img-mobile{
+.r4-img-mobile {
     display: block;
 }
 
-
-
-
-
-.img-wrapper {
+/* .img-wrapper {
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -1047,9 +1127,9 @@ span:nth-child(13) {
 .img-pulse img {
     animation: pulse 2s ease infinite;
     margin-left: 40px;
-}
+} */
 
-@keyframes pulse {
+/* @keyframes pulse {
     0% {
         transform: scale(1);
     }
@@ -1061,7 +1141,7 @@ span:nth-child(13) {
     100% {
         transform: scale(1);
     }
-}
+} */
 
 .project {
     margin-bottom: 50px;
@@ -1309,7 +1389,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 768px) { 
+@media only screen and (min-width: 768px) {
     .project img {
         border-radius: 30px;
     }
@@ -1322,115 +1402,115 @@ footer {
         display: none;
     }
 
-    .ThreeDBoard-img-desktop{
+    .ThreeDBoard-img-desktop {
         display: block;
     }
-    
-    .ThreeDBoard-img-mobile{
+
+    .ThreeDBoard-img-mobile {
         display: none;
     }
 
-    .pointillist-img-desktop{
+    .pointillist-img-desktop {
         display: block;
     }
-    
-    .pointillist-img-mobile{
+
+    .pointillist-img-mobile {
         display: none
     }
 
-    .recipe-img-desktop{
+    .recipe-img-desktop {
         display: block;
     }
-    
-    .recipe-img-mobile{
+
+    .recipe-img-mobile {
         display: none;
     }
 
-    .memory-img-desktop{
+    .memory-img-desktop {
         display: block;
     }
 
-    .memory-img-mobile{
+    .memory-img-mobile {
         display: none;
     }
 
-    .pythonMap-img-desktop{
+    .pythonMap-img-desktop {
         display: block;
     }
-    
-    .pythonMap-img-mobile{
+
+    .pythonMap-img-mobile {
         display: none;
     }
 
-    .amharic-img-desktop{
+    .amharic-img-desktop {
         display: block;
     }
-    
-    .amharic-img-mobile{
+
+    .amharic-img-mobile {
         display: none;
     }
 
-    .proverb-img-desktop{
+    .proverb-img-desktop {
         display: block;
     }
-    
-    .proverb-img-mobile{
+
+    .proverb-img-mobile {
         display: none;
     }
 
-    .student-img-desktop{
+    .student-img-desktop {
         display: block;
     }
-    
-    .student-img-mobile{
+
+    .student-img-mobile {
         display: none;
     }
 
-    .quote-img-desktop{
+    .quote-img-desktop {
         display: block;
     }
-    
-    .quote-img-mobile{
+
+    .quote-img-mobile {
         display: none;
     }
 
-    .todo-img-desktop{
+    .todo-img-desktop {
         display: block;
     }
-    
-    .todo-img-mobile{
+
+    .todo-img-mobile {
         display: none;
     }
 
-    .r1-img-desktop{
+    .r1-img-desktop {
         display: block;
     }
-    
-    .r1-img-mobile{
+
+    .r1-img-mobile {
         display: none;
     }
 
-    .r2-img-desktop{
+    .r2-img-desktop {
         display: block;
     }
-    
-    .r2-img-mobile{
+
+    .r2-img-mobile {
         display: none;
     }
 
-    .r3-img-desktop{
+    .r3-img-desktop {
         display: block;
     }
-    
-    .r3-img-mobile{
+
+    .r3-img-mobile {
         display: none;
     }
 
-    .r4-img-desktop{
+    .r4-img-desktop {
         display: block;
     }
-    
-    .r4-img-mobile{
+
+    .r4-img-mobile {
         display: none;
     }
 }
@@ -1441,7 +1521,7 @@ footer {
         column-gap: 80px;
     }
 
-    .navbar-content-footer ul{
+    .navbar-content-footer ul {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 80px;
     }
@@ -1480,7 +1560,7 @@ footer {
         column-gap: 40px;
     }
 
-    .navbar-content-footer ul{
+    .navbar-content-footer ul {
         column-gap: 40px;
     }
 
@@ -1488,7 +1568,7 @@ footer {
         font-size: 12px;
     }
 
-    .navbar-content-footer ul li a{
+    .navbar-content-footer ul li a {
         font-size: 12px;
     }
 
