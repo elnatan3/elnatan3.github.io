@@ -65,10 +65,10 @@ function showSlides(n) {
     var button = document.getElementById(descriptionId + "-button");
     if (description.style.display === "none") {
         description.style.display = "inline";
-        button.innerHTML = "Hide Description";
+        button.innerHTML = "Hide";
     } else {
         description.style.display = "none";
-        button.innerHTML = "Read Description";
+        button.innerHTML = "Read";
     }
 }
 

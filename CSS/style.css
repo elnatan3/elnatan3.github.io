@@ -578,6 +578,7 @@ span:nth-child(13) {
     display: grid;
     justify-items: center;
     row-gap: 2em;
+    background-color: greenyellow;
 }
 
 .grid-4-by-1 img {
@@ -587,10 +588,14 @@ span:nth-child(13) {
 }
 
 .grid-4-by-1 p {
+    padding: 50px;
     font-size: 20px;
     line-height: 1.5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
 
 
 .title {
@@ -789,24 +794,67 @@ span:nth-child(13) {
 .social-media img {
     width: 60px;
     height: 60px;
-    margin-left: 170px;
-}
-
-.social-media img:hover {
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media img:hover {
     background-color: lightblue;
     border-radius: 30%;
-}
+    transform: scale(1.2);
+  }
 
 .social-media p {
     font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     text-align: center;
     font-style: italic;
-}
-
+    position: relative;
+  }
+  
+  .social-media p::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #ff0080;
+    transition: width 0.3s ease;
+  }
+  
+  .social-media p:hover::after {
+    width: 100%;
+  }
+  
+  .social-media p::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    overflow: hidden;
+    width: 0;
+    transition: width 0.5s ease;
+    animation: revealText 2s linear forwards;
+  }
+  
+  @keyframes revealText {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .social-media p:hover::before {
+    width: 100%;
+  }
+  
 .button {
     border-style: solid;
     font-weight: bold;
@@ -1696,8 +1744,13 @@ footer {
         font-size: 20px;
     }
 
+    .grid-4-by-1 p{
+        padding: 20px;
+    }
+    
     .social-media p {
         font-size: 20px;
+        
     }
 
     .button {
@@ -1726,7 +1779,10 @@ footer {
         height: 100%;
         border-radius: 0;
     }
-
+    .read-button{
+        font-size: 9px;
+        padding: 5px;
+    }
     .img-pulse img {
         margin-left: 0px;
     }
@@ -1857,9 +1913,9 @@ footer {
     }
 
     .social-media img {
-        width: 30px;
-        height: 30px;
-        margin-left: 50px;
+        width: 20px;
+        height: 20px;
+        margin-left: 150px;
     }
 
 
