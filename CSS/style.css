@@ -699,9 +699,38 @@ span:nth-child(13) {
     width: 30px;
 }
 
+
+
+.learning-cert{
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    margin: 0rem;
+    margin-top: 60px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#each-image {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    margin-top: 220px;
+    /* top: 50%; */
+    transform: translate(0%, -50%); 
+    user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  #each-image > .image {
+    width: auto;
+    height: 56vmin;
+  }
+  
+
 .cert {
     position: relative;
-    margin-top: 80px;
+    margin-top: 60px;
     height: 55vh;
     width: 100%;
     background-image: linear-gradient(-45deg, #444444, #222222, #000000, #222222, #444444);
@@ -1759,6 +1788,26 @@ footer {
 
     .other h1 {
         font-size: 15px;
+    }
+
+    .learning-cert{
+        height: 20vh;
+    }
+    
+    #each-image {
+        display: flex;
+        gap: 3vmin;
+        position: absolute;
+        left: 50%;
+        margin-top: 80px;
+        /* top: 50%; */
+        transform: translate(0%, -50%); 
+        user-select: none; /* -- Prevent image highlighting -- */
+      }
+
+    #each-image > .image {
+        width: auto;
+        height: 25vmin;
     }
 
     .project {
