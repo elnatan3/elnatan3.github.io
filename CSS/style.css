@@ -1799,7 +1799,7 @@ footer {
         gap: 3vmin;
         position: absolute;
         left: 50%;
-        margin-top: 80px;
+        margin-top: 85px;
         /* top: 50%; */
         transform: translate(0%, -50%); 
         user-select: none; /* -- Prevent image highlighting -- */
@@ -1807,7 +1807,7 @@ footer {
 
     #each-image > .image {
         width: auto;
-        height: 25vmin;
+        height: 40vmin;
     }
 
     .project {
