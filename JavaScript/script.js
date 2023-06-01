@@ -74,50 +74,43 @@ function showSlides(n) {
 
 const track = document.getElementById("each-image");
 
-let mouseDown = false;
-let mouseDownAt = 0;
-let prevPercentage = 0;
-
-const handleOnDown = e => {
-  mouseDown = true;
-  mouseDownAt = getClientX(e);
-  prevPercentage = parseFloat(track.dataset.percentage) || 0;
-};
+const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
 const handleOnUp = () => {
-  mouseDown = false;
-};
+  track.dataset.mouseDownAt = "0";  
+  track.dataset.prevPercentage = track.dataset.percentage;
+}
 
 const handleOnMove = e => {
-  if (!mouseDown) return;
-
-  const mouseDelta = mouseDownAt - getClientX(e);
-  const maxDelta = window.innerWidth / 2;
-
-  const percentage = (mouseDelta / maxDelta) * -100;
-  const nextPercentageUnconstrained = prevPercentage + percentage;
-  const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
-
+  if(track.dataset.mouseDownAt === "0") return;
+  
+  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+  
+  const percentage = (mouseDelta / maxDelta) * -100,
+        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+  
   track.dataset.percentage = nextPercentage;
+  
+  track.animate({
+    transform: `translate(${nextPercentage}%, -50%)`
+  }, { duration: 1200, fill: "forwards" });
+}
 
-  track.style.transform = `translate(${nextPercentage}%, -50%)`;
-};
+/* -- Had to add extra lines for touch events -- */
 
-const getClientX = e => {
-  if (e.touches && e.touches.length > 0) {
-    return e.touches[0].clientX;
-  }
-  return e.clientX;
-};
+window.onmousedown = e => handleOnDown(e);
 
-track.addEventListener("mousedown", handleOnDown);
-track.addEventListener("touchstart", handleOnDown);
-window.addEventListener("mouseup", handleOnUp);
-window.addEventListener("touchend", handleOnUp);
-window.addEventListener("mousemove", handleOnMove);
-window.addEventListener("touchmove", handleOnMove);
+window.ontouchstart = e => handleOnDown(e.touches[0]);
 
+window.onmouseup = e => handleOnUp(e);
 
+window.ontouchend = e => handleOnUp(e.touches[0]);
+
+window.onmousemove = e => handleOnMove(e);
+
+window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 
   
