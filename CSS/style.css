@@ -1270,22 +1270,14 @@ span:nth-child(13) {
 
 .right {
     padding: 40px;
-    background: lightgreen;
     color: black;
 }
 
-tr td:first-child {
-    padding-right: 20px;
-    font-weight: bold;
+.left{
+    background: white;
+    border-radius: 50px;
 }
 
-tr td:nth-child(2) {
-    text-align: left;
-}
-
-tr td {
-    padding-top: 20px;
-}
 
 .row {
     display: grid;
@@ -1423,6 +1415,39 @@ footer {
         opacity: 1;
     }
 }
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact-item {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .contact-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .contact-item a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .contact-item a:hover {
+    color: #007bff;
+  }
+  
+  .contact-item img:hover {
+    transform: scale(1.2);
+  }
 
 .portfolio {
     font-size: 60px;
@@ -1884,6 +1909,11 @@ footer {
         font-size: 7px;
         padding: 5px 10px;
     }
+
+    .contact-item img {
+        width: 50px;
+        height: 50px;
+      }
 
 
 
