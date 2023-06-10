@@ -907,7 +907,7 @@ span:nth-child(13) {
 
 .project-container {
     width: 70vw;
-    margin: 0 auto;
+    margin-top: -70px;
     padding: 80px 0;
 }
 
@@ -922,7 +922,7 @@ span:nth-child(13) {
 
 .project-container>p {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 50px;
     padding: 10px 0;
     opacity: 0.7;
     text-align: center;
@@ -974,8 +974,43 @@ span:nth-child(13) {
     justify-items: center;
     position: relative;
     row-gap: 2em;
-    background-color: #BFEFFF;
+    background-color: cadetblue;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    margin-top: 10px;
 }
+
+.project h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 10px;
+}
+
+.project img {
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+
+}
+
+.project p {
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 
 
 .read-button {
@@ -1219,34 +1254,6 @@ span:nth-child(13) {
         transform: scale(1);
     }
 } */
-
-.project {
-    margin-bottom: 50px;
-    margin-top: 10px;
-}
-
-.project h2 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-
-.project img {
-    width: 90%;
-    height: 90%;
-    align-items: center;
-
-}
-
-.project p {
-    font-size: 22px;
-    line-height: 1.2;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 .contact,
 .contact p {
