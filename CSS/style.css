@@ -703,7 +703,7 @@ span:nth-child(13) {
 
 
 .learning-cert {
-    height: 60vh;
+    height: 440px;
     width: 100%;
     background-color: black;
     margin: 0rem;
@@ -726,7 +726,7 @@ span:nth-child(13) {
 
 #each-image>.image {
     width: auto;
-    height: 56vmin;
+    height: 400px;
 }
 
 
@@ -1833,7 +1833,7 @@ footer {
     }
 
     .learning-cert {
-        height: 30vh;
+        height: 220px;
     }
 
     #each-image {
@@ -1842,7 +1842,7 @@ footer {
 
     #each-image>.image {
         width: auto;
-        height: 40vmin;
+        height: 200px;
     }
 
     .project {
