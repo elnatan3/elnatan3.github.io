@@ -1085,7 +1085,8 @@ span:nth-child(13) {
 #memory,
 #pyth-research,
 #quote,
-#todo {
+#todo,
+#emoji {
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
@@ -1116,6 +1117,15 @@ span:nth-child(13) {
 .pointillist-img-mobile {
     display: block;
 }
+
+.emoji-img-desktop{
+    display: none;
+}
+
+.emoji-img-mobile{
+    display: block;
+}
+
 
 .recipe-img-desktop {
     display: none;
@@ -1534,7 +1544,15 @@ footer {
     }
 
     .pointillist-img-mobile {
-        display: none
+        display: none;
+    }
+
+    .emoji-img-desktop{
+        display: block;
+    }
+
+    .emoji-img-mobile{
+        display: none;
     }
 
     .recipe-img-desktop {
