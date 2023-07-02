@@ -13,6 +13,7 @@
         rel="stylesheet">
     <!--CSS Link-->
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsiveNavbar.css" />
     <script src="JavaScript/navigation.js"></script>
     <!--<link rel="stylesheet" href="css/responsiveNavBar.css">-->
 
@@ -21,9 +22,16 @@
 <header>
     <nav class="navbar">
         <div class="navbar-content justify">
-            <a href="#index" class="nav-logo">
+            <a href="#index" class="nav-logo" id="nav-logo">
                 <img src="img/logo.png" alt="logo for my personal portfolio">
             </a>
+            <!--Hamburger section-->
+            <div class="burger navbar-toggle" id="js-navbar-toggle">
+                <div class="l1"></div>
+                <div class="l2"></div>
+                <div class="l3"></div>
+            </div>
+            <!--End of Hamburger section-->
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -168,6 +176,8 @@
       </div>
     <script src="JavaScript/script.js"></script>
 </main>
+<script src="JavaScript/responsiveNavbar.js"></script>
+<script src="JavaScript/whenScroll.js"></script>
 </div>
 <footer>
     <script src="JavaScript/load.js"></script>

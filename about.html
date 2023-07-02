@@ -13,29 +13,37 @@
         rel="stylesheet">
     <!--CSS Link-->
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsiveNavbar.css" />
     <script src="JavaScript/navigation.js"></script>
     <!--<link rel="stylesheet" href="css/responsiveNavBar.css">-->
 
     <title>My Personal Portfolio</title>
 </head>
 <header>
-    <nav class="navbar">
-        <div class="navbar-content justify">
-            <a href="#index" class="nav-logo">
-                <img src="img/logo.png" alt="logo for my personal portfolio">
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="extracurricular.html">Extracurriculars</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+  <nav class="navbar">
+    <div class="navbar-content justify">
+        <a href="#index" class="nav-logo" id="nav-logo">
+            <img src="img/logo.png" alt="logo for my personal portfolio">
+        </a>
+        <!--Hamburger section-->
+        <div class="burger navbar-toggle" id="js-navbar-toggle">
+            <div class="l1"></div>
+            <div class="l2"></div>
+            <div class="l3"></div>
         </div>
-    </nav>
+        <!--End of Hamburger section-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="extracurricular.html">Extracurriculars</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 </header>
 <div id="content">
 <main>
@@ -53,6 +61,8 @@
     </div>
   </div>
 </main>
+<script src="JavaScript/responsiveNavbar.js"></script>
+<script src="JavaScript/whenScroll.js"></script>
 </div>
 <footer>
     <script src="JavaScript/load.js"></script>
