@@ -352,14 +352,13 @@ span:nth-child(13) {
 
 .about {
     display: grid;
-    margin-top: 30px;
+    margin-top: -5px;
     justify-items: center;
     row-gap: 2em;
 }
 
 .about {
     background-image: linear-gradient(-45deg, #FFFFFF, #F2F2F2, #E5E5E5, #F2F2F2, #FFFFFF);
-    border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     padding: 50px;
