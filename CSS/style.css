@@ -1113,7 +1113,8 @@ span:nth-child(13) {
 #pyth-research,
 #quote,
 #todo,
-#emoji {
+#emoji,
+#event {
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
@@ -1130,6 +1131,10 @@ span:nth-child(13) {
 }
 
 .ThreeDBoard-img-desktop {
+    display: block;
+}
+
+.event-img-desktop {
     display: block;
 }
 
