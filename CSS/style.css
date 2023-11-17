@@ -1114,7 +1114,8 @@ span:nth-child(13) {
 #quote,
 #todo,
 #emoji,
-#event {
+#event,
+#news {
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
@@ -1135,6 +1136,10 @@ span:nth-child(13) {
 }
 
 .event-img-desktop {
+    display: block;
+}
+
+.news-img-desktop {
     display: block;
 }
 
@@ -1584,6 +1589,10 @@ footer {
 
     .emoji-img-mobile{
         display: none;
+    }
+
+    .emoji-img-desktop{
+        display: block;
     }
 
     .recipe-img-desktop {
